@@ -19,7 +19,7 @@ class API {
         $post   = !empty($json) ? json_decode($json) : $_REQUEST;
         $post   = !is_array($post) ? get_object_vars($post) : $post;
         
-        require_once './config.php';    
+        require_once './config.php'; //Add with constants and database connections   
         require_once './includes/'. $class . '.php';
         //error_log(CMD.TYPE.MODULE);
         try {            
