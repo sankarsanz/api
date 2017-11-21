@@ -1,0 +1,2 @@
+//database constants
+//image constants
